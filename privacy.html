@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Privacy Policy</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="hero">
+        <div class="navbar">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="data.php">Data</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+    	<div class="info-container">
+    		<h1 style="color: #1d566e;">Privacy Policy</h1>
+            <br/>
+            <p>We place a high priority on the secure management and security of our users' data, and you can rest assured that we are taking all necessary efforts to keep your information safe. Our website's operations are in complete accordance with Malaysia's Department of Data Protection, Jabatan Perlindungan Data Peribadi (JPDP). By accessing or using this website, you consent to our organisation processing your personal data for the purposes indicated. Users may send an email to <b>carbonfootprint@gmail.com</b> at any time to revoke their consent.</b></p>
+            <br/>
+            <h2 style="color: #1d566e;">Personal Data</h2>
+            <p>The information collected and retained will be limited to that which is required to calculate the users' carbon footprint. The carbon footprint calculator will collect personal information such as the user's name, email, and postcode. Personal information will not be disclosed to the public when displaying data.
+            </p>
+            <br/>
+
+            <h2 style="color: #1d566e;">Uses of data</h2>
+            <p>The collected personal data will be used for the following purposes:
+                <ul>
+                    <li>To provide and maintain our service</li>
+                    <li>To manage and respond to users’ requests and inquiries</li>
+                    <li>To contact users of the service</li>
+                    <li>To provide users with news, updates of the service and general information</li>
+                </ul>
+            If any of the uses are changed or additional uses arise, we will instantly inform users and obtain your consent beforehand.
+            </p>
+            <br/>
+
+            <h2 style="color: #1d566e;">Retention Policy</h2>
+            <p>We will only keep your personal data for as long as it is required for the reasons outlined in this privacy statement. To the extent necessary to comply with our legal duties, resolve disputes, and enforce our legal agreements and policies, we will preserve and use your personal data. The data retention period is expected to last 12 months. As a result, after a year, any personal data that is no longer required may be erased from the database.</p>
+            <br/>
+            
+            <h2 style="color: #1d566e;">Users’ rights</h2>
+            <p>At any point whilst the website is in possession of or processing your personal data, all users have the following rights:</p>
+    	        <ul>
+    	            <li>Right of access – you can request a copy of the information that we hold about you.</li>
+    	            <li>Right of rectification – you can correct data that we hold about you that is inaccurate or incomplete.</li>
+    	            <li>Right of erasure – you can request for your data to be erased from our records (in certain circumstances).</li>
+    	            <li>Right to restriction of processing – you can request to restrict the processing of your data.</li>
+    	            <li>Right of portability – you have the right to have the data we hold about you transferred to another organisation.</li>
+    	            <li>Right to object – you have the right to object to certain types of processing, e.g. direct marketing.</li>
+    	        </ul><br>
+            <p>If users are to stumble upon any problems or uncertainties, please feel free to contact us at <b>carbonfootprint@gmail.com</b>.</p>
+    	</div>
+    </div>
+
+    <script type="text/javascript">
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if (menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "150px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

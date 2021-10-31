@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins";
+}
+
+.hero{
+	width: 80%;
+	margin: auto;
+}
+
+/*-----navbar-----*/
+.navbar{
+	margin: 3% auto;
+	display: flex;
+	align-items: center;
+	background: white;
+}
+
+.menu-icon{
+	width: 25px;
+	cursor: pointer;
+	padding-top: 2vh;
+	display: none;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin-right: 30px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 2.5vh;
+}
+
+nav ul li a:hover{
+	color: #21aba5;
+}
+
+/*-----home pg banner-----*/
+.banner{
+	display: flex;
+}
+
+.left-column, .right-column{
+	flex-basis: 50%;
+}
+
+.right-column img{
+	width: 100%;
+}
+
+.left-column{
+	align-content: space-around;
+	padding-top: 15%;
+}
+
+.left-column h1{
+	font-family: "Poppins";
+	font-size: 3vw;
+}
+.left-column h3{
+	font-family: "Poppins";
+	font-size: 1.5vw;
+}
+.left-column span{
+	color: #21aba5;
+}
+
+/*-----calculate now btn-----*/
+.primary-btn{
+	padding: 7px 30px;
+	margin-right: 15px;
+	outline: none;
+	border: 1px solid #21aba5;
+	border-radius: 20px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	background: linear-gradient(to right, #21aba5, #45eba5);
+	box-shadow: 0 12px 15px rgba(157, 224, 213);
+	color: #fff;
+	font-size: 2.5vh;
+	text-decoration: none;
+}
+.primary-btn:hover{
+	padding: 7px 30px;
+	margin-right: 15px;
+	outline: none;
+	border: 1px solid #21aba5;
+	border-radius: 20px;
+	cursor: pointer;
+	color: #21aba5;
+	background: transparent;
+	box-shadow: none;
+	transition: 0.5s;
+}
+
+
+/*------CALCULATOR------*/
+.container{
+  background-color: #FFF;
+  margin: 80px 10%;
+  padding: 30px 60px;
+  padding-bottom: 5%;
+  border-radius: 20px;
+  box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+}
+.container .title{
+	font-size: 28px;
+	font-weight: 500;
+	position: relative;
+}
+.container .title::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 100px;
+	background: linear-gradient(135deg, #21aba5, #45eba5);
+}
+.container form .input-box{
+	width: 100%;
+}
+form .details{
+	font-weight: 500;
+	margin-bottom: 5px;
+	line-height: 5px;
+}
+.section .input-box{
+	margin-bottom: 5px;
+}
+.section .input-box input{
+	outline: none;
+	height: 24px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	border-bottom-width: 2px;
+}
+.section .input-box input:focus,
+.section .input-box input:valid{
+	border-color: #21aba5;
+}
+.section .input-box select{
+	outline: none;
+	height: 24px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	border-bottom-width: 2px;
+}
+.section .input-box select:focus{
+	border-color: #21aba5;
+}
+.section .check-box span{
+	font-weight: 500;
+	margin-bottom: 5px;
+	line-height: 5px;
+}
+.container form .input-field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.container form .input-field .common-btn{
+	width: 50%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #21aba5;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 5px;
+}
+.container form .input-field .common-btn:hover{
+    background: #2fc4be;
+}
+.container form .input-field .reset-btn{
+		width: 50%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #f62459;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    margin-left: 5px;
+}
+.container form .input-field .reset-btn:hover{
+    background: #f1828d;
+}
+
+/*-----DATA DISPLAY-----*/
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+/*-----PRIVACY POLICY-----*/
+.info-container{
+    background-color: white;
+    color: black;
+    margin: 80px 10%;
+    padding: 30px 60px;
+    padding-bottom: 5%;
+    border-radius: 20px;
+    box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+}
+.info-container ul li{
+    margin-left: 20px;
+}
+.info-container p{
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 700px) {
+	/*--NAVBAR--*/
+	nav ul{
+		width: 100%;
+		position: absolute;
+		top: 65px;
+		right: 0;
+		z-index: 2;
+		background: linear-gradient(#1d566e, #21aba5);
+	}
+	nav ul li{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a{
+		color: #fff;
+		font-size: 2vh;
+	}
+	.menu-icon{
+		display: block;
+	}
+	#menuList{
+		overflow: hidden;
+		transition: 0.5s;
+	}
+
+	/*--HOME PAGE--*/
+	.banner{
+		width: 100%;
+		display: block;
+		margin-top: 45%;
+	}
+	.left-column{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.left-column h1{
+		font-family: "Poppins";
+		text-align: center;
+		font-size: 24px;
+		line-height: 1.2;
+	}
+	.left-column h3{
+		font-family: "Poppins";
+		font-size: 10px;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.right-column img{
+		display: none;
+	}
+
+	/*--CALCULATE NOW BTN--*/
+	.primary-btn{
+		font-size: 16px;
+		padding: 5px 15px;
+		text-align: center;
+		margin-left: 20%;
+		margin-right: 20%;
+		box-shadow: 0 4px 5px rgba(157, 224, 213);
+	}
+
+	/*--CALCULATOR--*/
+	.container{
+	  background-color: #FFF;
+	  margin: 10% -1px;
+	  padding: 20px 30px;
+	  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.20);
+	}
+	.container .title{
+		font-size: 24px;
+	}
+	.container form h3{
+		font-size: 16px;
+		color: #1d566e;
+	}
+	form .details{
+		font-size: 14px;
+	}
+	.radio-box label{
+		font-size: 14px;
+	}
+	.section .check-box span{
+		line-height: 2px;
+	}
+	.section .check-box label{
+		font-size: 14px;
+	}
+	.common-btn{
+		font-size: 14px;
+		padding: 4px 5px;
+	}
+	.reset-btn{
+		font-size: 14px;
+		padding: 4px 5px;
+	}
+	form .agree label{
+		font-size: 12px;
+	}
+
+	/*--PRIVACY POLICY--*/
+	.info-container{
+	  background-color: #FFF;
+	  margin: 10% -1px;
+	  padding: 20px 30px;
+	  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.20);
+	}
+	.info-container h1{
+		font-size: 24px;
+	}
+	.info-container h2{
+		font-size: 18px;
+	}
+	.info-container p{
+		font-size: 14px;
+		text-align: left;
+	}
+	.info-container ul li{
+		font-size: 14px;
+	}
+
+	/*--TABLE--*/
+	table {
+	border: 0;
+	}
+
+	table caption {
+	font-size: 1.3em;
+	}
+
+	table thead {
+	border: none;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	}
+
+	table tr {
+	border-bottom: 3px solid #ddd;
+	display: block;
+	margin-bottom: .625em;
+	}
+
+	table td {
+	border-bottom: 1px solid #ddd;
+	display: block;
+	font-size: .8em;
+	text-align: right;
+	}
+
+	table td::before {
+	content: attr(data-label);
+	float: left;
+	font-weight: bold;
+	text-transform: uppercase;
+	}
+
+	table td:last-child {
+	border-bottom: 0;
+	}
+}

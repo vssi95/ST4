@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carbon Footprint Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="hero">
+		<div class="navbar">
+			<nav>
+				<ul id="menuList">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="calculator.html">Calculator</a></li>
+					<li><a href="data.php">Data</a></li>
+					<li><a href="privacy.html">Privacy Policy</a></li>
+				</ul>
+			</nav>
+			<img src="menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+
+		<div class="container">
+			<div class="title">Carbon Footprint Calculator</div><br>
+			<form action="submit.php" method="post">
+				
+				<div class="section">
+					<h3>Contact Details</h3>
+					<div class="input-box">
+						<span class="details">Name:</span>
+						<input type="text" placeholder="Enter your name" name="name" required>
+					</div>
+					<div class="input-box">
+						<span class="details">Email:</span>
+						<input type="email" placeholder="Enter your email" name="email" required>
+					</div>
+					<div class="input-box">
+						<span class="details">Zipcode:</span>
+						<input type="text" placeholder="Enter 5-digit zipcode" name="zipcode" required>
+					</div>
+				</div><br>
+
+				<div class="section">
+					<h3>Home</h3>
+					<div class="input-box">
+						<span class="details">Number of People in Your Household:</span>
+						<input type="number" name="household" placeholder="" required>
+					</div>
+					<div class="input-box">
+						<span class="details">Average Electricity Consumption (Monthly):</span>
+						<input type="number" name="elec" placeholder="Enter in kWh" required>
+					</div>
+					<div class="input-box">
+						<span class="details">Average Cooking Gas Consumption (Monthly):</span>
+						<input type="number" name="gas" placeholder="Enter in gallons" required>
+					</div>
+					<div class="radio-box">
+						<span class="details">Meat/Dairy Consumption (Yearly):</span><br>
+						<label><input type="radio" name="selected" value="Above Average"/>Above Average</label><br>
+						<label><input type="radio" name="selected" value="Average"/>Average</label><br>
+						<label><input type="radio" name="selected" value="Below Average"/>Below Average</label><br>
+						<label><input type="radio" name="selected" value="Lacto-vegetarian"/>Lacto-vegetarian</label><br>
+						<label><input type="radio" name="selected" value="Vegan"/>Vegan</label>
+					</div>
+				</div><br>
+
+				<div class="section">
+					<h3>Transportation</h3>
+					<div class="input-box">
+						<span class="details">Number of Cars Owned</span>
+						<input type="number" name="car_n" placeholder="" required>
+					</div>
+					<div class="input-box">
+						<span class="details">Average Petrol Consumption per Car (Monthly):</span>
+						<input type="number" name="car" placeholder="Enter in litres" required>
+					</div>
+					<div class="input-box">
+						<span class="details">Size of Motorcycle:</span>
+						<select id="motor" name="motor_s">
+							<option value="" disabled selected hidden>Select Motorcycle Size</option>
+			                <option value="none">I do not own one</option>
+			                <option value="small">Small</option>
+			                <option value="medium">Medium</option>
+			                <option value="large">Large</option>
+			                <option value="average">Average (select if unsure)</option>
+			            </select>
+					</div>
+					<div class="input-box">
+						<span class="details">Average Journeys by Motorcycle (Monthly):</span>
+						<input type="number" name="motor" placeholder="Enter in km" required>
+					</div>
+					<div class="input-box">
+						<span class="details">Average Journeys by Bus (Monthly):</span>
+						<input type="number" name="bus" placeholder="Enter in km" required>
+					</div>
+				</div><br>
+
+				<div class="section">
+					<h3>Waste</h3>
+					<div class="check-box">
+						<span class="details">Which of the following products do you recycle in your household?</span>
+						<div class="check">
+							<label class=''><input type="checkbox" name="checked[]" value="89"/>Aluminium & Steel Cans</label><br/>
+							<label class=''><input type="checkbox" name="checked[]" value="36"/>Plastic</label><br/>
+							<label class=''><input type="checkbox" name="checked[]" value="113"/>Newspaper</label><br/>
+							<label class=''><input type="checkbox" name="checked[]" value="27"/>Magazines</label><br/>
+							<label class=''><input type="checkbox" name="checked[]" value="25"/>Glass</label><br/>
+							<label class=''><input type="checkbox" name="checked[]" value="0"/>I do not recycle.</label><br/>
+						</div>
+					</div>
+				</div><br><br>
+
+				<div class="agree">
+					<input type="checkbox" id="agree" name="aggree" value="agree" required>
+	                <label for="agree">By clicking "Submit", I accept all terms as stated in the <a href="priv.html" style="text-decoration: none; color: #6200ee;">Privacy Policy</a>.</label><br><br>
+	            </div>
+
+				<div class="input-field">
+	                <input class="common-btn" name="submit" type="submit" value="Submit">
+	                <input class="reset-btn" name="reset" type="reset" value="Reset">
+	            </div>
+	            
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		
+		var menuList = document.getElementById("menuList");
+
+		menuList.style.maxHeight = "0px";
+
+		function togglemenu(){
+			if(menuList.style.maxHeight == "0px"){
+				menuList.style.maxHeight = "150px";
+			}
+			else{
+				menuList.style.maxHeight = "0px";
+			}
+		}
+
+	</script>
+
+</body>
+</html>
+
+
